@@ -38,6 +38,8 @@ target 'keewee' do
   #   # Pods for testing
   # end
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
   target 'keeweeTests' do
     inherit! :search_paths
     # Pods for testing

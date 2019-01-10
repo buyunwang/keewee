@@ -17,10 +17,10 @@ import Mapbox, { MapView } from "@mapbox/react-native-mapbox-gl";
 Mapbox.setAccessToken(
   "pk.eyJ1IjoiYnJpYW53YW5nIiwiYSI6ImNqZ3N3OGp1ejA0OHIyd214Nmt1djZweHEifQ.VNLH_D4ApSCcygeEJ813DQ"
 );
+import CustomButton from "./elements/CustomButton";
 
 
-type Props = {};
-export default class App extends Component<Props>{
+export default class App extends Component{
   data = [
     { id: "xasdw", long: -123.118716, lat: 49.287564, title: "sdas" },
     { id: "sqd", long: -123.111, lat: 49.282, title: "qwq" },
@@ -34,6 +34,7 @@ export default class App extends Component<Props>{
       id={point.id}
       coordinate={[point.long, point.lat]}
       title={point.title}
+      onSelected = {()=>{AlertIOS.alert("Nice!")}}
     />
     //<Image>
     //<Mapbox.CallOut>
