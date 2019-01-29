@@ -25,3 +25,11 @@ yarn start:ios
 or
 react-native run-ios
 ```
+### TODO:
+- [x] Nodejs+MongoDB Backend
+- [x] Redux
+- [x] Display washrooms in Mapview
+- [x] Popup Modal Card
+- [x] Navigation on Google Maps
+- [ ] Mapbox Directions(Route Preview)
+- [ ] Update doc with how to run local server
