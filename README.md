@@ -25,6 +25,27 @@ yarn start:ios
 or
 react-native run-ios
 ```
+
+## Restify API
+
+> RESTful API is built with Node.js, Restify, Mongoose and JWT. 
+
+## Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Serve on localhost:3000
+npm start
+```
+
+## API Endpoints
+
+#### Washroom Routes
+
+- GET /washrooms
+
 ### TODO:
 - [x] Nodejs+MongoDB Backend
 - [x] Redux
