@@ -11,7 +11,7 @@ React Native App that shows you the public washrooms nearby. Build with [Mapbox 
 Clone source code
 
 ```sh
-git clone https://github.com/buyunwang/Keewee.git
+git clone https://github.com/buyunwang/keewee.git
 cd Keewee
 yarn
 ```
