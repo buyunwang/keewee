@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
     Platform,
@@ -15,8 +9,8 @@ import {
     Button
 } from 'react-native';
 
-//import Mapbox, { MapView } from "@mapbox/react-native-mapbox-gl";
 import MapboxGL, { MapView } from "@mapbox/react-native-mapbox-gl";
+import Polyline from "@mapbox/polyline";
 MapboxGL.setAccessToken(
     "pk.eyJ1IjoiYnJpYW53YW5nIiwiYSI6ImNqZ3N3OGp1ejA0OHIyd214Nmt1djZweHEifQ.VNLH_D4ApSCcygeEJ813DQ"
 );
@@ -36,12 +30,6 @@ class App extends Component {
     componentDidMount() {
         this.props.fetchData();
     }
-
-//   data = [
-//     { _id: "xasdw", long: -123.118716, lat: 49.287564, name: "sdas" },
-//     { _id: "sqd", long: -123.111, lat: 49.282, name: "qwq" },
-//     { _id: "xase12dw", long: -123.118716, lat: 49.47564, name: "sdwqwddas" }
-//   ];
     
     renderWashroomMarkers = point => {
         return (
@@ -94,12 +82,6 @@ class App extends Component {
                 <Button onPress={this.handleGetDirections} title="Get Directions" />
             </Modal>
       </View>
-        // <View style={styles.container}>
-        //     <FlatList
-        //         data = {this.props.washrooms}
-        //         renderItem={({ item }) => <Text>{item.name}</Text>}
-        //     />
-        // </View>
     );
   }
 }
